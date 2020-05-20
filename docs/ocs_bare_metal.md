@@ -416,10 +416,10 @@ If you are going to attempt to install OCS on undersized machines that do not
 meet the minimum resource requirements, you can define the following to limit
 the CPU and memory for each component.
 
-:warning:	**IMPORTANT** :warning:
+:warning: **IMPORTANT** :warning:
 > Reducing the resource requests/limits may have unintended consequences
-> including having critical pods evicted when the nodes become resource constrained.
-> Please proceed with caution.  More discussion [here][4].
+> including having critical pods evicted when the nodes become resource
+> constrained. Please proceed with caution.  More discussion [here][4].
 
 ```yaml
 resources:
