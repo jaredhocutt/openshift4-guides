@@ -416,6 +416,11 @@ If you are going to attempt to install OCS on undersized machines that do not
 meet the minimum resource requirements, you can define the following to limit
 the CPU and memory for each component.
 
+:warning: **IMPORTANT** :warning:
+> Reducing the resource requests/limits may have unintended consequences
+> including having critical pods evicted when the nodes become resource
+> constrained. Please proceed with caution.  More discussion [here][4].
+
 ```yaml
 resources:
   mds:
@@ -456,3 +461,4 @@ resources:
 [1]: https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.3/html-single/deploying_openshift_container_storage/index#installing-openshift-container-storage-using-local-storage-devices_rhocs
 [2]: https://docs.openshift.com/container-platform/4.3/operators/olm-adding-operators-to-cluster.html#olm-installing-operator-from-operatorhub-using-cli_olm-adding-operators-to-a-cluster
 [3]: https://access.redhat.com/documentation/en-us/red_hat_openshift_container_storage/4.3/html-single/deploying_openshift_container_storage/index#verifying-your-openshift-container-storage-installation_rhocs
+[4]: https://github.com/openshift/ocs-operator/pull/521#pullrequestreview-413936502
