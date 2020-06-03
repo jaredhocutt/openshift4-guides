@@ -1,6 +1,7 @@
 # OCS 4.3 on Bare Metal
 
 ## Table of Contents
+
 - [OCS 4.3 on Bare Metal](#ocs-43-on-bare-metal)
   - [Table of Contents](#table-of-contents)
   - [Authors](#authors)
