@@ -178,7 +178,7 @@ than the operator.
    modifications.
 
    - Change the `containerPort` for `healthz` of the `ebs-plugin` container on
-     **line 73** from `9808` to `19808`.
+     **line 73** from `9808` to `29808`.
 
      Before:
 
@@ -194,11 +194,11 @@ than the operator.
      ```yaml
      ports:
        - name: healthz
-         containerPort: 19808
+         containerPort: 29808
          protocol: TCP
      ```
 
-   - Add argument `--health-port=19808` to the `liveness-probe` container after
+   - Add argument `--health-port=29808` to the `liveness-probe` container after
      the `--csi-address=/csi/csi.sock` argument on **line 145**.
 
      Before:
@@ -213,7 +213,7 @@ than the operator.
      ```yaml
      args:
        - --csi-address=/csi/csi.sock
-       - --health-port=19808
+       - --health-port=29808
      ```
 
    - Configure Pod to use `hostNetwork` by adding `hostNetwork: true` in the
