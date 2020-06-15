@@ -274,7 +274,7 @@ Additional information can be found in the [official docs][1].
    ```bash
    oc adm new-project openshift-storage
 
-   oc annotate namespace openshift-storage openshift.io/cluster-monitoring="true"
+   oc label namespace openshift-storage openshift.io/cluster-monitoring="true"
    ```
 
 2. Create `OperatorGroup` and `Subscription` CR `ocs-storage-operator.yaml`
