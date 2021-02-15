@@ -18,7 +18,7 @@
 
 ## Description
 
-This guide describes the steps required to isntall and configure the AWS EBS
+This guide describes the steps required to install and configure the AWS EBS
 CSI driver on OpenShift 4.4.
 
 Out of the box, the AWS EBS CSI driver does not work due to being unable to
@@ -26,7 +26,7 @@ access the AWS metadata endpoint (i.e. 169.254.169.254). To work around the
 issue, the pods that get deployed need to set `hostNetwork: true` and then
 workaround a couple of issues that arise by making that change.
 
-The details of the root cuase are captured in this Bugzilla:
+The details of the root cause are captured in this Bugzilla:
 
 https://bugzilla.redhat.com/show_bug.cgi?id=1718389
 
